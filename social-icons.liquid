@@ -1,0 +1,94 @@
+{%- if settings.social_facebook_link != blank or settings.social_twitter_link != blank or settings.social_instagram_link != blank or settings.social_youtube_link != blank or settings.social_tiktok_link != blank or settings.social_pinterest_link != blank or settings.social_snapchat_link != blank or settings.social_tumblr_link != blank or settings.social_vimeo_link != blank -%}
+  <ul class="flex flex-wrap items-center gap-{{ gap }}">
+    {%- if settings.social_facebook_link != blank -%}
+      <li>
+        {%- assign platform =  'general.social.links.facebook' | t -%}
+        <a href="{{ settings.social_facebook_link }}" class="_ux-jzq social_platform block relative" is="magnet-link" title="{{ 'general.social.social_platform' | t: name: shop.name, platform: platform | escape }}">
+          {%- render 'icon-brand', icon: 'facebook', size: size -%}
+          <span class="_obf-7d2 sr-only">{{ platform }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if settings.social_twitter_link != blank -%}
+      <li>
+        {%- assign platform =  'general.social.links.twitter' | t -%}
+        <a href="{{ settings.social_twitter_link }}" class="_tmp-m2k social_platform block relative" is="magnet-link" title="{{ 'general.social.social_platform' | t: name: shop.name, platform: platform | escape }}">
+          {%- render 'icon-brand', icon: 'twitter', size: size -%}
+          <span class="_dbg-7dp sr-only">{{ platform }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if settings.social_instagram_link != blank -%}
+      <li>
+        {%- assign platform =  'general.social.links.instagram' | t -%}
+        <a href="{{ settings.social_instagram_link }}" class="_obf-vy7 social_platform block relative" is="magnet-link" title="{{ 'general.social.social_platform' | t: name: shop.name, platform: platform | escape }}">
+          {%- render 'icon-brand', icon: 'instagram', size: size -%}
+          <span class="_flx-xzt sr-only">{{ platform }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if settings.social_youtube_link != blank -%}
+      <li>
+        {%- assign platform =  'general.social.links.youtube' | t -%}
+        <a href="{{ settings.social_youtube_link }}" class="_obf-q1f social_platform block relative" is="magnet-link" title="{{ 'general.social.social_platform' | t: name: shop.name, platform: platform | escape }}">
+          {%- render 'icon-brand', icon: 'youtube', size: size -%}
+          <span class="_tmp-elk sr-only">{{ platform }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if settings.social_tiktok_link != blank -%}
+      <li>
+        {%- assign platform =  'general.social.links.tiktok' | t -%}
+        <a href="{{ settings.social_tiktok_link }}" class="_ux-pka social_platform block relative" is="magnet-link" title="{{ 'general.social.social_platform' | t: name: shop.name, platform: platform | escape }}">
+          {%- render 'icon-brand', icon: 'tiktok', size: size -%}
+          <span class="_flx-ebq sr-only">{{ platform }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if settings.social_snapchat_link != blank -%}
+      <li>
+        {%- assign platform =  'general.social.links.snapchat' | t -%}
+        <a href="{{ settings.social_snapchat_link }}" class="_dbg-phz social_platform block relative" is="magnet-link" title="{{ 'general.social.social_platform' | t: name: shop.name, platform: platform | escape }}">
+          {%- render 'icon-brand', icon: 'snapchat', size: size -%}
+          <span class="_tmp-9yl sr-only">{{ platform }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if settings.social_pinterest_link != blank -%}
+      <li>
+        {%- assign platform =  'general.social.links.pinterest' | t -%}
+        <a href="{{ settings.social_pinterest_link }}" class="_flx-tx9 social_platform block relative" is="magnet-link" title="{{ 'general.social.social_platform' | t: name: shop.name, platform: platform | escape }}">
+          {%- render 'icon-brand', icon: 'pinterest', size: size -%}
+          <span class="_tmp-rg0 sr-only">{{ platform }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if settings.social_tumblr_link != blank -%}
+      <li>
+        {%- assign platform =  'general.social.links.tumblr' | t -%}
+        <a href="{{ settings.social_tumblr_link }}" class="_tmp-72l social_platform block relative" is="magnet-link" title="{{ 'general.social.social_platform' | t: name: shop.name, platform: platform | escape }}">
+          {%- render 'icon-brand', icon: 'tumblr', size: size -%}
+          <span class="_flx-dhm sr-only">{{ platform }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if settings.social_linkedin_link != blank -%}
+      <li>
+        {%- assign platform =  'general.social.links.linkedin' | t -%}
+        <a href="{{ settings.social_linkedin_link }}" class="_ux-rna social_platform block relative" is="magnet-link" title="{{ 'general.social.social_platform' | t: name: shop.name, platform: platform | escape }}">
+          {%- render 'icon-brand', icon: 'linkedin', size: size -%}
+          <span class="_ux-h1z sr-only">{{ platform }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if settings.social_vimeo_link != blank -%}
+      <li>
+        {%- assign platform =  'general.social.links.vimeo' | t -%}
+        <a href="{{ settings.social_vimeo_link }}" class="_tmp-gb9 social_platform block relative" is="magnet-link" title="{{ 'general.social.social_platform' | t: name: shop.name, platform: platform | escape }}">
+          {%- render 'icon-brand', icon: 'vimeo', size: size -%}
+          <span class="_tmp-cdm sr-only">{{ platform }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+  </ul>
+{%- endif -%}
